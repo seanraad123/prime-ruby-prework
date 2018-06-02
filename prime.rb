@@ -17,5 +17,3 @@ def prime?(n)
     return true
     end
 end
-
-print prime?(3)
