@@ -17,4 +17,4 @@ def prime?(n)
     end
 end
 
-prime?(11)
+puts prime?(11)
