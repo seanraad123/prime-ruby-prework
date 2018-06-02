@@ -24,20 +24,15 @@ end
 
 puts prime?(2)
 
-
 iterations = 100_000
+array = Array(1..10_000_000)
 
-iterations = 100_000
-Benchmark.bm(27) do |bm|
-  bm.report('joining an array of strings') do
-    iterations.times do
-      ["The", "current", "time", "is", Time.now].join(" ")
-    end
+Benchmark.bmbm(7) do |bm|
+  bm.report('reverse') do
+    array.dup.reverse
   end
 
-  bm.report('string interpolation') do
-    iterations.times do
-      "The current time is #{Time.now}"
-    end
+  bm.report('reverse!') do
+    array.dup.reverse!
   end
 end
