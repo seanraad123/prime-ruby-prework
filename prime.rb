@@ -16,3 +16,5 @@ def prime?(n)
     return true
     end
 end
+
+prime?(11)
