@@ -14,3 +14,5 @@ def prime?(n)
            return false
        i += 6
     return true
+
+print prime?(3)
