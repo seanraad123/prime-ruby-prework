@@ -19,4 +19,4 @@ def prime?(n)
     end
 end
 
-print prime?(30)
+print prime?(2)
