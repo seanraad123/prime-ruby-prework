@@ -1,20 +1,5 @@
 # Add  code here!
-def prime?(n)
-    if n <= 1
-       return false
-    elsif n <= 3
-       return true
-    elsif n % 2 == 0 || n % 3 == 0
-       return false
-    end
-    i = 5
-    while i * i <= n
-       if n % i == 0 || n % (i + 2) == 0
-           return false
-       end
-       i += 6
-    return true
-    end
+def is_prime?(n)
+  output = (2..n).find { |i| n % i == 0 }
+  output == n ? "#{n} is prime" : "#{n} is NOT prime"
 end
-
-puts prime?(1763)
