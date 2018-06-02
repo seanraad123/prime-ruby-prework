@@ -22,7 +22,7 @@ def prime?(n)
     end
 end
 
-print prime?(2)
+puts prime?(2)
 
 
 # calculate pi to 10k digits
