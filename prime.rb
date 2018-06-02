@@ -1,9 +1,4 @@
 # Add  code here!
-require 'benchmark'
-require 'bigdecimal/math'
-
-
-
 def prime?(n)
     if n <= 1
        return false
@@ -21,4 +16,3 @@ def prime?(n)
     return true
     end
 end
-
