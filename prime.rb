@@ -22,17 +22,3 @@ def prime?(n)
     end
 end
 
-puts prime?(2)
-
-iterations = 100_000
-array = Array(1..10_000_000)
-
-Benchmark.bmbm(7) do |bm|
-  bm.report('reverse') do
-    array.dup.reverse
-  end
-
-  bm.report('reverse!') do
-    array.dup.reverse!
-  end
-end
