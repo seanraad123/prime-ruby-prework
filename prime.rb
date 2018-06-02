@@ -1,4 +1,7 @@
 # Add  code here!
+require 'benchmark'
+require 'bigdecimal/math'
+
 
 
 def prime?(n)
@@ -20,3 +23,7 @@ def prime?(n)
 end
 
 print prime?(2)
+
+
+# calculate pi to 10k digits
+puts Benchmark.measure { BigMath.PI(10_000) }
