@@ -4,4 +4,4 @@ def prime?(n)
   output == n ?  true :  false
 end
 
-prime?(3)
+puts prime?(3)
